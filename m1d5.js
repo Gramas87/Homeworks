@@ -13,9 +13,10 @@ ASSIGNMENT RULES
 */
 
 const area = function(l1,l2){
-    l1*l2
+    return (l1*l2)
 }
-console.log(area(5,77))
+
+console.log(area(5,7))
 
 
 /* EXERCISE 2
@@ -26,8 +27,7 @@ console.log(area(5,77))
 const crazySum = function(param1,param2){
     if (param1===param2){
         (param1+param2) * 3
-    }else {
-        param1+param2
+    return (param1+param2)
     }
 }
 console.log(crazySum(5,5))
@@ -37,13 +37,30 @@ console.log(crazySum(5,5))
  It should return triple their absolute difference if the given number is greater than 19.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const crazyDiff = function(numberToCompare){
+
+    let difference = (numberToCompare-19)
+    if (difference > 19){
+        return difference *3
+    }
+}
+console.log(crazyDiff(66))
+
+
 
 /* EXERCISE 4
  Write a function called "boundary" which accept an integer parameter n and returns true if n is within 20 and 100 (included) or if n it's equal to 400.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const boundary = function(n){
+    if ( n===400  || (n >= 20 && n >= 100)  
+    
+    {return true}
+}
+    
+
+
+
 
 /* EXERCISE 5
  Write a function called "strivify" which accepts a string as a parameter.
